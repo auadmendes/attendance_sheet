@@ -1,12 +1,6 @@
 import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
 
-// we can use this one or the below one .....
-// interface ParticipantProps {
-//   name: string;
-// }
-
-
 type Props = {
   name: string;
   onRemove: () => void;

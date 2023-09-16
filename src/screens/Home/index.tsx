@@ -28,12 +28,7 @@ export function Home() {
   }
 
   function handleParticipantRemove(name: string) {
-    //const filteredParticipants = participants.filter(participant => participant != name)
-    //setParticipants(filteredParticipants)
 
-    //return console.log(participants.filter(participant => participant != name))
-
-    //setParticipants(prevState => participants.filter(participant => participant != name))
 
     Alert.alert("Remove Participant", `Removing the participant ${name}?`, [
       {
@@ -61,7 +56,6 @@ export function Home() {
           style={styles.eventInput}
           placeholder="Nome do participante"
           placeholderTextColor="#555"
-          //onChangeText={e => SetParticipantName(e)} 2 ways
           onChangeText={SetParticipantName}
           value={participantName}
         />
@@ -99,18 +93,6 @@ export function Home() {
 
         )}
       />
-
-      {/* using MAP ⇣ */}
-
-      {/* <ScrollView>
-        {participants.map((item) => (
-          <Participant
-            key={item}
-            name={item}
-            onRemove={() => handleParticipantRemove(item)}
-          />
-        ))}
-      </ScrollView> */}
 
     </View>
 
